@@ -23,36 +23,41 @@ high_total_df.show()
 most_helpful_df = high_total_df.filter('(helpful_votes/total_votes)>=0.5')
 most_helpful_df.show()
 ```
- - Number of Vine Reviews vs Non-Vine Reviews
+### Number of Vine Reviews vs Non-Vine Reviews
 
-From here we created a dataframe containing reviews that were part of the Vine program.
-![paid_reviews_df](Resources/paid_reviews_df.png)
+ - From here we created a dataframe containing reviews that were part of the Vine program.
 
-There are 170 reviews that were part of the Vine program.
-![count_paid_reviews_df](Resources/paid_reviews_df.png)
+   ![paid_reviews_df](Resources/paid_reviews_df.png)
 
-To determine the number of non-Vine reviews, we created another dataframe and ran a count of those rows.
-![unpaid_reviews_df](Resources/unpaid_reviews_df.png)
+ - There are 170 reviews that were part of the Vine program.
 
-![count_unpaid_reviews](Resources/count_unpaid_reviews.png)
+   ![count_paid_reviews_df](Resources/paid_reviews_df.png)
 
- - Number of 5 Star Vine Reviews vs. 5 Star Non-Vine Reviews
+ - There are 37,823 reviews that were not part of the Vine program, which was determined by creating another dataframe containing non-Vine reviews and running a count of rows.
+   
+   ![unpaid_reviews_df](Resources/unpaid_reviews_df.png)
 
- Utilizing the paid Vine reviews dataframe, we filtered for 5 star ratings and ran a count of those to determine that only 65 of the paid reviews received a 5 star rating.
+   ![count_unpaid_reviews](Resources/count_unpaid_reviews.png)
 
- ![count_5_star_paid](Resources/count_5_star_paid.png)
+### Number of 5 Star Vine Reviews vs. 5 Star Non-Vine Reviews
 
- Then the non-Vine review dataframe was also filtered and counted to determine that there were 20,605 ratings that received 5 stars.
+ - Utilizing the paid Vine reviews dataframe, we filtered for 5 star ratings and ran a count of those to determine that only 65 of the paid reviews received a 5 star rating.
 
- ![count_5_star_unpaid](Resources/count_5_star_unpaid.png)
+   ![count_5_star_paid](Resources/count_5_star_paid.png)
 
- - Percentages of 5 Star Reviews
+ - Then the non-Vine review dataframe was also filtered and counted to determine that there were 20,605 ratings that received 5 stars.
 
- The percentage of 5 star ratings for the Vine reviews was 38%.
- ![percentage_5_paid](Resources/percentage_5_paid.png)
+   ![count_5_star_unpaid](Resources/count_5_star_unpaid.png)
 
- The percentage of 5 star ratings for non-Vine reviews was 54%.
- ![percentage_5_unpaid](Resources/percentage_5_unpaid.png)
+### Percentages of 5 Star Reviews
+
+ - The percentage of 5 star ratings for the Vine reviews was 38%.
+
+   ![percentage_5_paid](Resources/percentage_5_paid.png)
+
+ - The percentage of 5 star ratings for non-Vine reviews was 54%.
+
+   ![percentage_5_unpaid](Resources/percentage_5_unpaid.png)
 
 ## Summary
 
